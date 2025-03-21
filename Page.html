@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Birthday</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.5.1/dist/confetti.browser.min.js"></script>
+    <script src="functions.js" defer></script>
+</head>
+<body>
+    <div class="container">
+        <h1>Happy Birthday</h1>
+        <p>Wishing you a day filled with happiness and a year filled with joy. Happy birthday!</p>
+        <p>May your birthday be the start of a year filled with good luck, good health, and much happiness.</p>
+    </div>
+    <div>
+        <button class="Confettilauncher"onclick="launchConfetti(); launchCelebration(); Reveal();">Click Me</button>
+    </div>
+    <div class="container">
+        <p id="counter" class="counter">Confetti Launched: 0 times</p>
+        <div class="controls">
+            <label>
+                <input type="checkbox" id="muteCheckbox"> Mute Audio
+            </label>
+        </div>
+    </div>
+    <audio id="birthdaySound" src="Birthday.mp3"></audio>
+</body>
+</html>

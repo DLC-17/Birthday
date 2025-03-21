@@ -1,0 +1,114 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background: linear-gradient(-45deg, #000000, #1a1a1a, #000000, #1a1a1a);
+    background-size: 400% 400%;
+    animation: gradientBG 10s ease infinite;
+    margin: 0;
+    padding: 0;
+    color: white;
+}
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    animation: fadeIn 2s forwards;
+}
+body, .container {
+    transition: opacity 1s ease-in-out; /* Smooth transition for opacity */
+}
+@keyframes gradientBG {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+h1 {
+    color: #ffffff;
+    font-size: 36px;
+    margin-top: 50px;
+}
+
+h2 {
+    color: #1baef2;
+    font-size: 24px;
+    margin-top: 20px;
+}
+
+p {
+    color: #0080ff;
+    font-size: 18px;
+    margin-top: 20px;
+}
+
+button {
+    font-size: 20px;
+    padding: 10px 20px;
+    border: none;
+    background-color: #ff4081;
+    color: white;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s, opacity 0.3s, box-shadow 0.3s;
+    margin-top: 6%;
+    opacity: 100%;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+button:hover {
+    background-color: #0944db;
+    opacity: 100%;
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2);
+}
+
+.counter {
+    color: white;
+    font-size: 20px;
+    margin-top: 20px;
+}
+
+.controls {
+    margin-top: 20px;
+    color: white;
+    font-size: 18px;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+    width: 10px;
+}
+::-webkit-scrollbar-track {
+    background: #1a1a1a;
+}
+::-webkit-scrollbar-thumb {
+    background: #ff4081;
+    border-radius: 5px;
+}
+::-webkit-scrollbar-thumb:hover {
+    background: #0944db;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+    h1 {
+        font-size: 28px;
+        margin-top: 30px;
+    }
+    h2 {
+        font-size: 20px;
+    }
+    p {
+        font-size: 16px;
+    }
+    button {
+        font-size: 18px;
+        padding: 8px 16px;
+    }
+}
